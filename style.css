@@ -1,0 +1,738 @@
+@font-face {
+    font-family: arabic_kufi;
+    src: url(arabic_kufi.ttf);
+}
+
+* {
+    margin: 0;
+    direction: rtl;
+    font-family: arabic_kufi;
+}
+
+
+/******************************/
+/*Navbar*/
+/******************************/
+
+#nav-bar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.75) none repeat scroll 0 0;
+    border: none;
+    width: 100%;
+    border-bottom: 0.5px solid rgb(160, 160, 160);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    z-index: 10;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: white;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 24px;
+    transition: 0.3s all;
+}
+
+#nav-bar a:hover {
+
+    color: #bbbbbb;
+
+}
+
+#right-nav {
+    padding-right: 230px;
+    padding-left: 30px;
+}
+#right-nav img {
+    cursor: pointer;
+}
+
+#middle-nav {
+    margin-left: 180px;
+}
+
+#nav-bar button {
+    color: #fff;
+    background-color: #28a745;
+    text-align: center;
+    border-radius: 0.25rem;
+    border: none;
+    line-height: 1;
+    padding: 4px;
+    margin-right: -5px;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+#nav-bar button:hover {
+    background-color: #329d4b;
+
+}
+
+#left-nav img {
+    border-radius: 50%;
+}
+
+/******************************/
+/*Middle Section*/
+/******************************/
+
+#middle {
+    height: 630px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+#home-pic {
+    width: 100%;
+    object-fit: contain;
+    margin-top: 61px;
+    position: relative;
+
+}
+
+#middle-text {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 350px;
+    flex-direction: column;
+    margin-right: auto;
+    right: 310px;
+}
+
+#middle-text h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 64px;
+}
+
+#middle-text p {
+    color: #fff;
+    font-weight: lighter;
+    font-size: medium;
+}
+
+/******************************/
+/*Searh Bar*/
+/******************************/
+
+#search {
+    display: flex;
+    margin-top: 20px;
+}
+
+#search-bar {
+    border: none;
+    border-radius: 5px;
+    width: 700px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#search button {
+    margin-right: 3px;
+    background-color: #935CAE;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+#search button:hover {
+    cursor: pointer;
+    background-color: #6f3f87;
+    color: rgb(26, 26, 26);
+}
+
+/******************************/
+/*Pics Section*/
+/******************************/
+
+#pics a {
+    text-decoration: none;
+    margin-bottom: -95px;
+    cursor: auto;
+}
+
+#pics-text h2 {
+    justify-content: center;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+#pics {
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    align-content: center;
+    justify-content: center;
+    grid-row-gap: 10px;
+}
+
+
+#pics img {
+    width: 370px;
+    height: 440px;
+    border-radius: 25px;
+    transition: 0.2s all;
+}
+
+#pics img:hover {
+    filter: brightness(0.75);
+    visibility: visible;
+    cursor: pointer;
+}
+
+#pics h3 {
+    position: relative;
+    bottom: 75%;
+    margin-right: 40px;
+    color: #333;
+    font-weight: 400;
+    font-size: 25px;
+    border-top: 4px solid #935CAE;
+    width: 160px;
+    padding-top: 13px;
+}
+
+#pics button {
+    position: relative;
+    bottom: 20%;
+    margin-right: 10px;
+    background: #ffffffa6;
+    border-radius: 10px;
+    border: none;
+    font-size: small;
+    font-weight: lighter;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#pics button:hover {
+    pointer-events: none;
+
+}
+
+/******************************/
+/*Otlob Section*/
+/******************************/
+
+#talab {
+    margin-top: 50px;
+    padding-top: 50px;
+    background-color: #f9f9f9;
+    justify-content: center;
+    align-items: center;
+}
+
+#squares {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1140px;
+    height: 335px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+}
+
+
+#squares a {
+    text-decoration: none;
+    font-weight: 100;
+    font-size: x-large;
+    margin-bottom: 1.5rem;
+    color: black;
+}
+
+
+
+#talab h2 {
+    font-size: 45px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#square-1 {
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 5px;
+    padding: 20px;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+
+#square-1:hover {
+
+    background: #f7fbff;
+}
+
+#square-2 {
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 5px;
+    padding: 20px;
+    transition: 0.2s all;
+    cursor: pointer;
+
+
+}
+
+#square-2:hover {
+
+    background: #f7fbff;
+}
+
+#square-3 {
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 5px;
+    padding: 20px;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+
+#square-3:hover {
+
+    background: #f7fbff;
+}
+
+#square-4 {
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 5px;
+    padding: 20px;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+
+#square-4:hover {
+
+    background: #f7fbff;
+}
+
+#squares p {
+    display: inline-block;
+    font-weight: 100;
+    font-size: small;
+    margin-left: 0.5rem;
+}
+
+#squares strong {
+    display: inline-block;
+    font-size: small;
+    margin-left: 0.5rem;
+}
+
+#talab-button {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+}
+
+#talab-button button {
+    padding: 15px;
+    font-size: larger;
+    color: white;
+    background-color: #935CAE;
+    border: none;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 4px;
+    transition: 0.2s all;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+#talab-button button:hover {
+    background-color: #6f3f87;
+    color: #333;
+}
+
+/******************************/
+/*Phones Section*/
+/******************************/
+
+#phones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#phones-text h2 {
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+#phones img {
+    width: 330px;
+    height: 600px;
+}
+
+#phones h2 {
+    font-weight: 400;
+    font-size: larger;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#phones i {
+    text-align: center;
+    color: #935CAE;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+#phones i:hover {
+    color: rgb(247, 247, 247);
+    background-color: #935CAE;
+}
+
+#phone-button {
+
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#phone-button button {
+    padding: 15px;
+    font-size: larger;
+    color: white;
+    background-color: #935CAE;
+    border: none;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 4px;
+    transition: 0.2s all;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+#phone-button button:hover {
+    background-color: #6f3f87;
+    color: #333;
+}
+
+/******************************/
+/*Mwared Section*/
+/******************************/
+
+#mwared {
+    background: #f9f9f9;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#mwared h2 {
+    font-size: 45px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#mwared button {
+    padding: 15px;
+    font-size: larger;
+    color: white;
+    background-color: #935CAE;
+    border: none;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 4px;
+    transition: 0.2s all;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+#mwared button:hover {
+    background-color: #6f3f87;
+    color: #333;
+}
+
+#grid-mwared {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+
+#mwared i {
+    text-align: center;
+    color: #935CAE;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    margin-left: 3px;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+#mwared i:hover {
+    color: rgb(247, 247, 247);
+    background-color: #935CAE;
+}
+
+#mwared h4 {
+    font-weight: 400;
+    font-size: larger;
+    margin-top: 0;
+    text-transform: uppercase;
+    text-align: right;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#mwared p {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 24px;
+    color: #777;
+    text-align: right;
+}
+
+
+/******************************/
+/*Slider Section*/
+/******************************/
+
+
+#purple {
+    background-image: linear-gradient(60deg, #464498, #6b358b, #3e225d);
+    text-align: center;
+    padding-top: 50px;
+}
+
+#purple h3 {
+    line-height: 1.5;
+    color: #fff;
+    font-weight: 100;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#purple h2 {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #FF9B17;
+    font-size: 48px;
+}
+
+#purple h4 {
+    line-height: 1.5;
+    color: #fff;
+    font-weight: 100;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#purple button {
+    padding: 0px 15px;
+    margin-bottom: 50px;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 3px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+#purple button:hover {
+    border: 1px solid #FF9B17;
+    color: #FF9B17;
+}
+
+/******************************/
+/*Contact Section*/
+/******************************/
+
+#contact {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+
+#contact i {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+#contact h4 {
+    font-size: 25px;
+}
+
+#contact p {
+    font-size: 16px;
+font-weight: 100;
+line-height: 24px;
+
+    margin-bottom: 1rem;
+    color: #777;
+}
+
+#contact-2 p {
+    direction: ltr;
+    color: #935CAE;
+    transition: all 0.2s;
+}
+
+#contact-2 p:hover {
+    color: #777;
+    cursor: pointer;
+}
+
+
+#contact-3 p {
+    direction: ltr;
+}
+
+/******************************/
+/*Footer Section*/
+/******************************/
+
+#footer{
+    background: #313238 none repeat scroll 0 0;
+    display: flex;
+    justify-content: space-between;
+    padding:10px 150px 10px 150px;
+}
+
+#right-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#left-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+#right-footer h3{
+    font-size: 20px;
+    color: #FF9B17;
+    cursor: pointer;
+
+}
+
+#right-footer p{
+    
+    color: #fff;
+    font-size: 18px;
+}
+
+#right-footer i{
+    margin-right: 30px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+#right-footer i:hover{
+    
+    color: #6f3f87;
+}
+
+#left-footer{
+    direction: ltr;
+    color: #fff;
+    font-size: 15px;
+}
+
+
+
+
+
+.body{
+    background-image: url("images/home-bg.jpg");
+    background-size: cover;
+        background-position: 35% 0%;
+   
+}
+
+/* style button form */
+.btn-form{
+    background-color: #6f4584;
+    color: #dfe6e3;
+    padding: 12px;
+    border-radius: 8px;
+    margin-right: 2%;
+}
+
+/* style button form when  disabled*/
+.btn-form:disabled{
+    opacity: 0.2;
+}
+
+/* style main section form */
+.main{
+    margin-top: 7%;
+   
+    
+}
+
+/* background style of form */
+.my-bg{
+    background-color: #d6d7e0;
+    padding-right: 3%;
+    border-radius: 20px;
+}
+
+/* style input form */
+
+input{
+    width: 40%;
+    border-radius: 10px;
+    height: 50px;
+    display: block;
+}
+/* style button complete form */
+.btn-form-comblete{
+    background-color: #4719e1;
+}
+
+/* style the check box */
+.checkbox{
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+

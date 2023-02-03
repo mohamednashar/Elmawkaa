@@ -1,0 +1,198 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="form-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <!--Icons Library-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--Animations Library-->
+  <title>Document</title>
+</head>
+
+<body id="bodyy">
+
+  <div id="nav-bar"> <!--NavBar Section-->
+    <div id="right-nav">
+      <img src="images/logo.png" style="width: 150px;height: 50px;" alt="">
+
+    </div>
+    <div id="middle-nav">
+      <a href="">مواد بناء</a>
+      <a href="">أحدث الطلبيات</a>
+      <a href="">كيف يعمل؟</a>
+      <a href="">سجل كموؤد</a>
+      <a href="">المدونة</a>
+      <a href="">الباقات</a>
+      <a href="">اتصل بنا</a>
+
+
+    </div>
+    <div id="left-nav">
+      <a href=""><i class="fa-solid fa-user"></i> تسجيل الدخول</a>
+      <button>جديد</button>
+
+    </div>
+  </div>
+
+
+  <div id="container"> <!--Form 3 Section-->
+    <div id="mid-form">
+
+
+      <div id="forms-3">
+        <div id="mids-first">
+          <button>اضغط هنا لتعرف كيف تعمل المنصة</button>
+          <h3>طلب عرض السعر</h3>
+          <h2>خرسانة جاهزة</h2>
+
+        </div>
+
+        <div id="buttons">
+          <button>
+            <p>1</p>
+            معلومات المنتج
+          </button>
+          <button>
+            <p>2</p>
+            المشروع
+          </button>
+          <button>
+            <p>3</p>
+            ازاي نوصلك
+          </button>
+        </div>
+
+        <div id="gray">
+          <p>اسم شركتك ايه؟</p>
+          <p id="matloba_4" style="color:rgb(220, 0, 0)">هذه الخانة مطلوبة</p>
+          <input id="sherka" type="text" name="" id="" placeholder="اسم شركتك ايه؟">
+          <p>اسم الشخص المفوض ثنائي</p>
+          <p id="matloba_5" style="color:rgb(220, 0, 0)">هذه الخانة مطلوبة</p>
+          <input id="sha5s" type="text" name="" id="" placeholder="اسم الشخص المفوض ثنائي">
+          <p>رقم الموبايل المسجل عالواتساب</p>
+          <input id="number" style="direction: ltr;" type="text" name="" id="" placeholder=" مثال: 01012345678 ">
+          <p id="matloba_6" style="color:rgb(220, 0, 0);font-size: 12px;"> برجاء ادخال رقم موبايل واتساب صحيح (بالأرقام
+            الانجليزية) <br>يعمل في مصر بدون كود الدولة مثال: 01012345678 </p>
+
+          <p>ايميلك</p>
+          <input id="email" type="text" name="" placeholder="مثال: mohamed@gmail.com">
+          <p id="matloba_7" style="color:rgb(220, 0, 0);font-size: 12px;">تأكد من ادخال بريد الكتروني صحيح</p>
+
+          <div id="check">
+            <p> <input type="checkbox" name="" id=""> تذكرني علي هذا الجهاز </p>
+
+            <p> <input type="checkbox" name="" id=""> تذكر المشروع </p>
+          </div>
+
+
+
+
+
+
+
+        </div>
+        <div id="two-buttons">
+          <button id="back_3">السابق</button>
+          <button id="next_3">التالي</button>
+
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+  <div id="footer"> <!--Footer Section-->
+    <div id="right-footer">
+      <h3>احجز مكالمة</h3>
+      <p>&nbsp;</p>
+      <p>مع أحد خبرائنا</p>
+      <i class="fa-brands fa-linkedin-in"></i>
+      <i class="fa-brands fa-square-instagram"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook-f"></i>
+
+    </div>
+
+    <div id="left-footer">
+      <p>
+        حقوق النشر 2022 - Elmawkaa, Inc. | جميع الحقوق محفوظة
+      </p>
+    </div>
+
+
+  </div>
+
+
+  <script src="script_3.js"></script> <!--Link Section-->
+
+  <script type="module">      //sending form 3 data to firebase
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.0/firebase-app.js";
+    import { getDatabase, set, ref, push, child, onValue, get } from "https://www.gstatic.com/firebasejs/9.17.0/firebase-database.js";
+
+    var firebaseConfig = {
+
+      apiKey: "AIzaSyDJD2Dqe8JuEpklkf02N25qxBLE4V-zvtE",
+
+      authDomain: "elmawkaa-74a19.firebaseapp.com",
+
+      projectId: "elmawkaa-74a19",
+
+      storageBucket: "elmawkaa-74a19.appspot.com",
+
+      messagingSenderId: "634318218872",
+
+      appId: "1:634318218872:web:15db1d3645038c4988ef8d"
+
+    };
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+
+    next_3.addEventListener("click", (eo) => {
+
+      let sherka = document.getElementById("sherka").value;
+      let sha5s = document.getElementById("sha5s").value;
+      let email = document.getElementById("email").value;
+      let number = document.getElementById("number").value;
+
+
+      const userId = push(child(ref(database), 'user')).key;
+      set(ref(database, 'users/' + userId), {
+        CompanyName: sherka,
+        CompanyMofawed: sha5s,
+        Email:email,
+        Number:number
+
+
+      })
+
+
+    }
+
+    )
+
+
+
+  </script>
+
+</body>
+
+</html>

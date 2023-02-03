@@ -1,0 +1,375 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الموقع - سوق اونلاين لمواد البناء</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!--Icons Library-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--Animations Library-->
+</head>
+
+<body>
+
+    <div id="nav-bar">   <!--Navbar-->
+        <div id="right-nav">    
+            <img src="images/logo.png" style="width: 150px;height: 50px;" alt="">
+
+        </div>
+        <div id="middle-nav">
+            <a href="">مواد بناء</a>
+            <a href="">أحدث الطلبيات</a>
+            <a href="">كيف يعمل؟</a>
+            <a href="">سجل كموؤد</a>
+            <a href="">المدونة</a>
+            <a href="">الباقات</a>
+            <a href="">اتصل بنا</a>
+
+
+        </div>
+        <div id="left-nav">
+            <a href=""><i class="fa-solid fa-user"></i> تسجيل الدخول</a>
+            <button>جديد</button>
+
+        </div>
+    </div>
+
+    <div id="middle">    <!--First Section-->
+        <img id="home-pic" src="images/home-bg.jpg" alt="">
+        <div id="middle-text">
+            <h1> تعبت من عملية شراء مواد البناء في مصر؟ </h1>
+            <p> اطلب عروض أسعار دلوقتي أونلاين من أكبر قاعدة بيانات للموردين في مصر </p>
+
+            <div id="search">
+                <input id="search-bar" type="text" placeholder="''جرب تكتب أسمنت''">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+    <div id="pics-text">  <!--Gird Pics Text-->
+        <h2> اطلب عروض أسعار لمواد البناء الآن</h2>
+    </div>
+
+    <div id="pics">       <!--Gird Pics Section-->
+
+        <a href="form.html" id="card-1" onclick="gather()">
+            <img src="images/1.jpg" alt="">
+            <h3>خرسانة جاهزة</h3>
+            <button>قواعد</button>
+            <button>اعمده</button>
+            <button>بلاطات</button>
+            <button>أرضيات</button>
+            <button>مقاوم</button>
+        </a>
+        <a href="form.html" id="card-2">
+            <img src="images/2.jpg" alt="">
+            <h3>شكاير</h3>
+            <button>أسمنت السويس</button>
+            <button>شكاير أسمنت</button>
+            <button>شيكارة</button>
+        
+        </a>
+        <a href="form.html" id="card-3">
+            <img src="images/3.jpg" alt="">
+            <h3>أسمنت سايب</h3>
+            <button>مقاوم</button>
+            <button>بني سويف</button>
+            <button>السويدي</button>
+            <button>حلوان</button>
+        
+        </a>
+        <a href="form.html" id="card-4">
+            <img src="images/4.jpg" alt="">
+            <h3>حديد تسليح</h3>
+            <button>عز المصريين</button>
+            <button>العتال</button>
+            <button>بشاي</button>
+            <button>الدخيلة</button>
+
+        </a>
+        <a href="form.html" id="card-5">
+            <img src="images/5.jpg" alt="">
+            <h3>طوب أحمر </h3>
+            <button>طوبة مقاس عادي</button>
+            <button>طوبة مقاس دوبل</button>
+        
+        </a>
+        <a href="form.html" id="card-6">
+            <img src="images/6.jpg" alt="">
+            <h3>طوب أسمنتي</h3>
+            <button>نص الي</button>
+            <button>الي</button>
+            <button>أسمنتي مصمت</button>
+            
+        </a>
+        <a href="form.html" id="card-7">
+            <img src="images/7.jpg" alt="">
+            <h3>بلوط أسمنتي</h3>
+            <button>نص الي</button>
+            <button>الي</button>
+            <button>أسمنتي مصمت</button>
+        </a>
+        <a href="form.html" id="card-8">
+            <img src="images/8.jpg" alt="">
+            <h3>بلاط موزايكو</h3>
+            <button>بلاط حصوة</button>
+            <button>بلاط أسمنتي</button>
+            <button>بلاط موزايكو</button>
+           
+        </a>
+        <a href="form.html" id="card-9">
+            <img src="images/9.jpg" alt="">
+            <h3>بلاط انترلوك</h3>
+            <button>بلاط انترلوك</button>
+            <button>بلاط رصيف</button>
+            <button>بلاط خرساني</button>
+      
+        </a>
+        <a href="form.html" id="card-10">
+            <img src="images/10.jpg" alt="">
+            <h3>ألياف حديدية</h3>
+            <button>اضافات خرسانية</button>
+            <button>استيل فايبر</button>
+            <button>بلاطات</button>
+            <button>أرضيات</button>
+            <button>مقاوم</button>
+        </a>
+        <a href="form.html" id="card-11">
+            <img src="images/11.jpg" alt="">
+            <h3>رمل</h3>
+            <button>رمل خشن</button>
+            <button>رمل حرش</button>
+            <button>رمل بدون مواد العضوية</button>
+          
+        </a>
+        <a href="form.html" id="card-12">
+            <img src="images/12.jpg" alt="">
+            <h3>مواد كهربائية</h3>
+            <button>مفاتيح اضاءة</button>
+            <button>أسلاك وكابلات</button>
+            <button>طاقة شمسية</button>
+           
+        </a>
+        <a href="form.html" id="card-13">
+            <img src="images/13.jpg" alt="">
+            <h3>مواد سباكة</h3>
+            <button>مواسير التغذية</button>
+            <button>محابس</button>
+            <button>مواسير الصرف الصحي</button>
+        
+        </a>
+        <a href="form.html" id="card-14">
+            <img src="images/14.jpg" alt="">
+            <h3>مواد بناء أخري</h3>
+            <button>جبس</button>
+            <button>قطاعات حديد</button>
+            <button>فايبر استيل</button>
+        </a>
+
+    </div>
+
+    <div id="talab">      <!--Talabat Section-->
+        <h2>أحدث طلبات عروض الأسعار</h2>
+
+        <div id="squares">
+
+            <div id="square-1">
+                <div id="right-1">
+                    <a href="">طوب خفيف</a>
+                    <br>
+                    <strong>2600 م 3- </strong>
+
+                    <p>الدفع كاش - </p>
+                    <p>نشرت منذ ساعتين</p>
+                    <br>
+                    <p>عروض الأسعار : 0</p>
+
+                </div>
+
+
+            </div>
+
+            <div id="square-2">
+                <div id="right-1">
+                    <a href="">طوب خفيف</a>
+                    <br>
+                    <strong>15 طن</strong>
+
+                    <p>الدفع كاش - </p>
+                    <p>نشرت منذ ساعتين</p>
+                    <br>
+                    <p>عروض الأسعار : 0</p>
+
+                </div>
+
+
+            </div>
+
+            <div id="square-3">
+                <div id="right-1">
+                    <a href="">طوب خفيف</a>
+                    <br>
+                    <strong>32 م 3- </strong>
+
+                    <p>الدفع كاش - </p>
+                    <p>نشرت منذ ساعتين</p>
+                    <br>
+                    <p>عروض الأسعار : 0</p>
+
+                </div>
+
+
+            </div>
+
+            <div id="square-4">
+                <div id="right-1">
+                    <a href="">طوب خفيف</a>
+                    <br>
+                    <strong>120 م 3- </strong>
+
+                    <p>الدفع كاش - </p>
+                    <p>نشرت منذ ساعتين</p>
+                    <br>
+                    <p>عروض الأسعار : 0</p>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <div id="talab-button">
+            <button>اعرض جميع الطلبيات</button>
+        </div>
+    </div>
+
+    <div id="phones-text"> <!--Phones Text Section-->
+        <h2>كيف تعمل منصة الموقع</h2>
+    </div>
+
+    <div id="phones">      <!--Phones Section-->
+
+
+        <div id="phone-1">
+
+            <h2> <i class="fa-solid fa-check"></i>اختار مواد البناء المطلوبة</h2>
+            <img src="images/phone1.jpg" alt="">
+
+        </div>
+        <div id="phone-2">
+
+            <h2> <i class="fa-regular fa-gem"></i>املأ البيانات واطلب عرض سعر</h2>
+            <img src="images/phone2.jpg" alt="">
+
+
+        </div>
+
+        <div id="phone-3">
+            <h2> <i class="fa-regular fa-paper-plane"></i>اختار أحسن عرض ونفذ الطلبية</h2>
+            <img src="images/phone3.jpg" alt="">
+
+        </div>
+    </div>
+    <div id="phone-button">
+        <button>خطوات طلب عروض الأسعار</button>
+    </div>
+
+    <div id="mwared">     <!--Join Us Section-->
+        <h2>انضم لنا كمورد</h2>
+        <button>خطوات التسجيل وتقديم عروض الأسعار</button>
+        <div id="grid-mwared">
+            <div id="grid-1-m">
+                <h4> <i class="fa-solid fa-pen"></i> املأ نموذج التسجيل</h4>
+                <p> املأ معلومات شركتك ومنتجاتك لنتمكن من التحقق منها</p>
+
+            </div>
+            <div id="grid-2-m">
+                <h4> <i class="fa-solid fa-check"></i> وثق معلوماتك</h4>
+                <p>سوف نراجع بياناتك في خلال 48 ساعة ونقوم من التحقق من معلوماتك</p>
+
+            </div>
+            <div id="grid-3-m">
+                <h4> <i class="fa-regular fa-gem"></i> طلبات عروض الأسعار</h4>
+                <p>تحكم في عروض أسعارك وقم بتقديم العروض
+                    كن سريع في الرد على طلبات عروض الأسعار، عملاءنا يعتمدون عليك </p>
+                <br>
+            </div>
+            <div id="grid-4-m">
+                <h4> <i class="fa-regular fa-paper-plane"></i> احصل على ايراداتك</h4>
+                <p>عندما تتفق على الشروط، اعمل معنا على توصيل منتجك بطريقة مريحة واحصل على ايراداتك</p>
+
+            </div>
+        </div>
+
+        <button>انضم لنا كمورد</button>
+
+    </div>
+
+    <div id="purple">     <!--Purple Background Section-->
+        <h3>انضم الى قادة المقاولين بمنصة الموقع</h3>
+        <h2>ووفر وقت وفلوس إدارة مشترياتك</h2>
+        <h4> ابدأ الآن واحجز مكالمة مع أحد خبرائنا </h4>
+        <button>احجز مكالمة</button>
+    </div>
+
+    <div id="contact">    <!--About Us Section-->
+        <div id="contact-1">
+            <i class="fa-regular fa-envelope"></i>
+            <h4>البريد الكتروني</h4>
+            <p>Info@elmawkaa.com</p>
+
+        </div>
+        <div id="contact-2">
+            <i class="fa-solid fa-phone"></i>
+            <h4>هاتف</h4>
+            <p>(+20) 100 282 0786</p>
+
+        </div>
+        <div id="contact-3">
+            <i class="fa-solid fa-location-dot"></i>
+            <h4>مكاننا</h4>
+            <p>- ١٧١ شارع التحرير مبني الحرم اليوناني بعابدين GrEEK Campus، القاهرة، مصر</p>
+            <p>- 2035 Sunset Lake Road, Suite B-2, in the city of Newark, zip code 19702 and county of New Castle, USA
+            </p>
+
+        </div>
+    </div>
+
+    <div id="footer">
+        <div id="right-footer">
+            <h3>احجز مكالمة</h3>
+            <p>&nbsp;</p>
+            <p>مع أحد خبرائنا</p>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+
+        </div>
+
+        <div id="left-footer">
+            <p>
+                حقوق النشر 2022 - Elmawkaa, Inc. | جميع الحقوق محفوظة
+            </p>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
